@@ -1,7 +1,5 @@
 import json
-import turtle
 import urllib.request
-import time
 import webbrowser
 import geocoder
 
@@ -18,6 +16,7 @@ for person in people:
 
 # print Long and Lat
 g = geocoder.ip('me')
+
 file.write("\n Your current Lat / Long is : " + str(g.latlng))
 file.close()
 webbrowser.open("iss.txt")
